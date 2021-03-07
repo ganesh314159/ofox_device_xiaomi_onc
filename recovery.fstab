@@ -26,6 +26,8 @@
 /persist_image        emmc            /dev/block/bootdevice/by-name/persist                flags=display="Persist";backup=1;flashimg=1
 /splash               emmc            /dev/block/bootdevice/by-name/splash                 flags=display="Splash Logo";backup=1;flashimg=1
 
+/misc                 emmc            /dev/block/bootdevice/by-name/misc                   flags=display="Misc";backup=0;flashimg=0
+
 # Firmware
 /firmware_image       emmc            /dev/block/bootdevice/by-name/modem                  flags=display="Firmware";flashimg=0;backup=1
 /dsp_image            emmc            /dev/block/bootdevice/by-name/dsp                    flags=display="DSP";backup=1;flashimg=0;subpartitionof=/firmware_image
