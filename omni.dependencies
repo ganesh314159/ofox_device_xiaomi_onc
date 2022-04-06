@@ -1,9 +1,9 @@
 [
   {
     "remote"      : "github",
-    "repository"  : "hadad/android_kernel_xiaomi_onc",
+    "repository"  : "ganesh314159/ofox_kernel_xiaomi_onc",
     "target_path" : "kernel/xiaomi/onc",
-    "branch"      : "recovery",
+    "branch"      : "9.0",
     "clone-depth" : "1"
   }
 ]

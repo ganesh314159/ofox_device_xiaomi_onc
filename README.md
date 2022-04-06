@@ -45,8 +45,8 @@ git clone https://gitlab.com/OrangeFox/misc/theme.git bootable/recovery/gui/them
 Use following commands
 ```
 cd ~/OrangeFox_9
-git clone https://gitlab.com/ganesh314159/ofox-device-xiaomi-onclite -b fox_9.0 device/xiaomi/onc
-git clone https://gitlab.com/ganesh314159/android_kernel_xiaomi_onc -b recovery kernel/xiaomi/onc
+git clone https://github.com/ganesh314159/ofox_device_xiaomi_onc -b 9.0 device/xiaomi/onc
+git clone https://github.com/ganesh314159/ofox_kernel_xiaomi_onc -b 9.0 kernel/xiaomi/onc
 ```
 
 Make any changes in tree,kernel and source if you want to or else you can go ahead.
