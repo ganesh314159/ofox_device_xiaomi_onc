@@ -82,6 +82,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export FOX_USE_SPECIFIC_MAGISK_ZIP="/home/ganesh314159/Magisk-v23.0.zip"
 	export OF_SKIP_DECRYPTED_ADOPTED_STORAGE=1
 	export OF_SKIP_FBE_DECRYPTION_SDKVERSION=31
+	export OF_CHECK_OVERWRITE_ATTEMPTS=1
 
 	# let's see what are our build VARs
 	if [ -n "$FOX_BUILD_LOG_FILE" -a -f "$FOX_BUILD_LOG_FILE" ]; then
