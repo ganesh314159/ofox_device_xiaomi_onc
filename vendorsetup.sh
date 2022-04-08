@@ -70,7 +70,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export OF_QUICK_BACKUP_LIST="/boot;/dtbo;/data;/cache;/system_root;/vendor;"
 	export FOX_DELETE_AROMAFM=1
 	export OF_USE_GREEN_LED=0
-	export OF_DONT_KEEP_LOG_HISTORY=1
+	export OF_DONT_KEEP_LOG_HISTORY=0
 	export OF_USE_MAGISKBOOT_FOR_ALL_PATCHES=1
 	export OF_FORCE_MAGISKBOOT_BOOT_PATCH_MIUI=1
 	export OF_NO_SPLASH_CHANGE=1
