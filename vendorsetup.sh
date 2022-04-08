@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2019-2020 OrangeFox Recovery Project
+# Copyright (C) 2022-2023 OrangeFox Recovery Project
 #
 # This software is licensed under the terms of the GNU General Public
 # License version 2, as published by the Free Software Foundation, and
