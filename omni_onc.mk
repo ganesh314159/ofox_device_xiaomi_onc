@@ -34,4 +34,5 @@ PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
 
 # HACK: Set vendor patch level
 PRODUCT_PROPERTY_OVERRIDES += \
+    ro.adb.secure=0 \
     ro.vendor.build.security_patch=2099-12-31
