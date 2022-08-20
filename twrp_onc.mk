@@ -17,14 +17,18 @@
 # Release name
 PRODUCT_RELEASE_NAME := onc
 
-$(call inherit-product, build/target/product/embedded.mk)
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, vendor/twrp/config/common.mk)
+
+# Inherit from onc device
+$(call inherit-product, device/xiaomi/onc/device.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := onc
-PRODUCT_NAME := omni_onc
+PRODUCT_NAME := twrp_onc
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Y3
 PRODUCT_MANUFACTURER := Xiaomi

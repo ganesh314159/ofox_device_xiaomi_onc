@@ -47,7 +47,6 @@ fi
 
 if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export TARGET_DEVICE_ALT="onclite"
-	export OF_TARGET_DEVICES="onc,onclite"
 	export OF_SCREEN_H=2280
 	export OF_STATUS_H=80
 	export OF_STATUS_INDENT_LEFT=48
@@ -83,6 +82,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export OF_SKIP_DECRYPTED_ADOPTED_STORAGE=1
 	export OF_SKIP_FBE_DECRYPTION_SDKVERSION=31
 	export OF_CHECK_OVERWRITE_ATTEMPTS=1
+	export FOX_BUILD_FULL_KERNEL_SOURCES=1
 
 	# let's see what are our build VARs
 	if [ -n "$FOX_BUILD_LOG_FILE" -a -f "$FOX_BUILD_LOG_FILE" ]; then
@@ -91,9 +91,5 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
   	   export | grep "TW_" >> $FOX_BUILD_LOG_FILE
   	   export | grep "TARGET_" >> $FOX_BUILD_LOG_FILE
  	fi
-  	
-	add_lunch_combo omni_"$FDEVICE"-eng
-	add_lunch_combo omni_"$FDEVICE"-userdebug
-	add_lunch_combo omni_"$FDEVICE"-user
 fi
 
