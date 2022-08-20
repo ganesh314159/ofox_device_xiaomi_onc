@@ -15,3 +15,7 @@
 #
 
 LOCAL_PATH := device/xiaomi/onc
+
+# HW crypto
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee
