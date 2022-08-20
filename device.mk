@@ -16,6 +16,11 @@
 
 LOCAL_PATH := device/xiaomi/onc
 
+# Decryption
+PRODUCT_PACKAGES += \
+    qcom_decrypt \
+    qcom_decrypt_fbe
+
 # HW crypto
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee
